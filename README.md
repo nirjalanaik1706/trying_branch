@@ -38,8 +38,8 @@ Steps to use the project and manage branches:
 # Check current branch
 git branch
 
-# Create a new branch
-git checkout -b feature-branch
+# Create a new branch (example: secondmain)
+git checkout -b secondmain
 
 # Make changes and commit
 git add .
@@ -47,29 +47,29 @@ git commit -m "Add new feature"
 
 # Merge branch into main
 git checkout main
-git merge feature-branch
+git merge secondmain
 
 # Delete branch locally
-git branch -d feature-branch
+git branch -d secondmain
 
 # Delete branch from remote
-git push origin --delete feature-branch
+git push origin --delete secondmain
 ```
 
 ---
 
 ## Features
 - Create new branches for features or fixes  
-- Merge branches safely into main  
+- Merge branches safely into `main`  
 - Delete local and remote branches  
 - Simple workflow for collaborative projects  
 
 ---
 
 ## Git Branch Management
-- **Create Branch:** `git checkout -b branch-name`  
+- **Create Branch:** `git checkout -b branch-name` (example: `secondmain`)  
 - **Switch Branch:** `git checkout branch-name`  
-- **Merge Branch:** `git merge branch-name`  
+- **Merge Branch:** `git checkout main` → `git merge branch-name`  
 - **Delete Local Branch:** `git branch -d branch-name`  
 - **Delete Remote Branch:** `git push origin --delete branch-name`  
 
@@ -97,10 +97,10 @@ git-branch-management/
 To contribute to this project:
 
 1. Fork the repository  
-2. Create a new branch (`git checkout -b feature-branch`)  
+2. Create a new branch (`git checkout -b secondmain`)  
 3. Make your changes  
 4. Commit the changes (`git commit -m "Add feature"`)  
-5. Push to the branch (`git push origin feature-branch`)  
+5. Push to the branch (`git push origin secondmain`)  
 6. Create a Pull Request  
 
 ---
